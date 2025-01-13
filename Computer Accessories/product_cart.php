@@ -1,30 +1,30 @@
-<!-- <?php
-// include "db_connection.php";
-// if(isset($_POST['update_update_btn'])){
-//    $update_value = $_POST['update_quantity'];
-//    $update_id = $_POST['update_quantity_id'];
-//    $sql= "UPDATE cart SET quantity = '$update_value' WHERE id = '$update_id'";
-//    $update_quantity_query = $conn->query($sql);
-//    if($update_quantity_query){
-//       header('location: product_cart.php');
-//    };
-// };
+<?php
+include "db_connection.php";
+if(isset($_POST['update_update_btn'])){
+   $update_value = $_POST['update_quantity'];
+   $update_id = $_POST['update_quantity_id'];
+   $sql= "UPDATE cart SET quantity = '$update_value' WHERE id = '$update_id'";
+   $update_quantity_query = $conn->query($sql);
+   if($update_quantity_query){
+      header('location: product_cart.php');
+   };
+};
 
-// if(isset($_GET['remove'])){
-//    $remove_id = $_GET['remove'];
-//    $sql= "DELETE FROM cart WHERE id = '$remove_id'";
-//    $query=$conn->query($sql); 
-//    header('location:product_cart.php');
-// };
+if(isset($_GET['remove'])){
+   $remove_id = $_GET['remove'];
+   $sql= "DELETE FROM cart WHERE id = '$remove_id'";
+   $query=$conn->query($sql); 
+   header('location:product_cart.php');
+};
 
-// if(isset($_GET['delete_all'])){
+if(isset($_GET['delete_all'])){
    
-//    $sql= "DELETE FROM cart";
-//    $query=$conn->query($sql);
-//    header('location: product_cart.php');
-// }
+   $sql= "DELETE FROM cart";
+   $query=$conn->query($sql);
+   header('location: product_cart.php');
+}
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-<!-- <?php include 'header.php'; ?> -->
+<?php include 'header.php'; ?>
 
 <div class="container">
 
@@ -61,11 +61,11 @@
 
          <?php 
          
-      //  $sql = "SELECT * FROM cart";
-      //  $select_cart = $conn->query($sql);
-      //    $grand_total = 0;
-      //    if(mysqli_num_rows($select_cart) > 0){
-      //       while($fetch_cart = mysqli_fetch_assoc($select_cart)){
+       $sql = "SELECT * FROM cart";
+       $select_cart = $conn->query($sql);
+         $grand_total = 0;
+         if(mysqli_num_rows($select_cart) > 0){
+            while($fetch_cart = mysqli_fetch_assoc($select_cart)){
          ?>
 
          <tr>
@@ -83,9 +83,9 @@
             <td><a href="product_cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('remove item from cart?')" class="delete-btn"> remove</a></td>
          </tr>
          <?php
-         //   $grand_total += $sub_total;  
-         //    };
-         // };
+           $grand_total += $sub_total;  
+            };
+         };
          ?>
          <br>
          <tr class="table-bottom">
@@ -107,6 +107,6 @@
 
 </div>
 <?php
-// include "footer.php"; ?>
+include "footer.php"; ?>
 </body>
 </html>
