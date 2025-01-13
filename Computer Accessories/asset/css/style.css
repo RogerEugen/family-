@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
 }
-
+.mainText{
+color: blue;
+font-size: medium;
+}
 .container{
     margin: 0 auto;
     max-width: 1100px;
