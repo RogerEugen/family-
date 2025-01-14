@@ -1,6 +1,6 @@
 <?php
 include "db_connection.php";
- include 'header.php';
+//  include 'header.php';
 if(isset($_POST['add_to_cart'])){
 
    $product_name = $_POST['product_name'];
@@ -89,6 +89,6 @@ if(isset($message)){
 
 
 </body>
-<?php
-include "footer.php";?>
+<!-- <?php
+// include "footer.php";?> -->
 </html>

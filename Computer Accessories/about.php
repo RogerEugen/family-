@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>FieldTech</title>
 </head>
 <body>
     <section id="Shopping Cart" class="Shopping Cart">
         <div class="about sec">
          <div class="l-ab">
-             <img src="img/php.png" alt="" class="ab-img">
+             <img src="asset/img/php.png" alt="" class="ab-img">
          </div>
          <div class="r-ab">
              <h2>About FieldTech</h2>

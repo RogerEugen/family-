@@ -247,9 +247,9 @@ body{
     position: relative;
 }
 
-/* .about .r-ab h2{
+.about .r-ab h2{
     margin-bottom: 20px;
-} */
+}
 
 .about .r-ab p{
     font-size: 14px;
@@ -366,12 +366,7 @@ body{
 }
 
 
-/* LOGINFORM */
-
-
-       
-
-
+/* LOGINFORM   */
 .login-container {
     background-color: #ffffff;
     padding: 20px;
@@ -383,7 +378,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-}
+
 .login-container h2 {
     text-align: center;
     margin-bottom: 20px;

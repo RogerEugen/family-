@@ -38,7 +38,8 @@ if(isset($_GET['delete_all'])){
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+<!-- <?
+//  php include 'header.php'; ?> -->
 
 <div class="container">
 
@@ -107,6 +108,6 @@ if(isset($_GET['delete_all'])){
 
 </div>
 <?php
-include "footer.php"; ?>
+// include "footer.php"; ?>
 </body>
 </html>
