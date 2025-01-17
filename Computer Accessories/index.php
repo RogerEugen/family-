@@ -1,3 +1,6 @@
+<?php
+include_once('db_connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
                     <li><a class="active" href="#Homepage">Homepage</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="login.html">Product Listings</a></li>            </div>
+                    <li><a href="login.php">Product Listings</a></li>            </div>
         </div>
         <section id="Homepage" class="Homepage" >
             <!-- Hero Section -->
