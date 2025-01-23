@@ -16,7 +16,7 @@ if (!$conn) {
 // Create database if it doesn't exist
 $sql1 = "CREATE DATABASE IF NOT EXISTS $dbname";
 if (mysqli_query($conn, $sql1)) {
-    echo "Database created successfully or already exists.<br>";
+    // echo "Database created successfully or already exists.<br>";
 } else {
     echo "Error creating database: " . mysqli_error($conn) . "<br>";
 }
@@ -35,7 +35,7 @@ $sql2 = "CREATE TABLE IF NOT EXISTS customer (
 )";
 
 if (mysqli_query($conn, $sql2)) {
-    echo "Customer table created successfully.<br>";
+    // echo "Customer table created successfully.<br>";
 } else {
     echo "Error creating customer table: " . mysqli_error($conn) . "<br>";
 }
@@ -53,7 +53,7 @@ $sql3 = "CREATE TABLE IF NOT EXISTS product (
 )";
 
 if (mysqli_query($conn, $sql3)) {
-    echo "Product table created successfully.<br>";
+    // echo "Product table created successfully.<br>";
 } else {
     echo "Error creating product table: " . mysqli_error($conn) . "<br>";
 }
@@ -67,7 +67,11 @@ $sql4 = "CREATE TABLE IF NOT EXISTS cart (
 )";
 
 if (mysqli_query($conn, $sql4)) {
-    echo "Cart table created successfully.<br>";
+    // echo "Cart table created successfully.<br>";
 } else {
     echo "Error creating cart table: " . mysqli_error($conn) . "<br>";
 }
+
+
+
+

@@ -1,5 +1,10 @@
 <?php
+session_start();
 include 'db_connection.php';
+if(isset($_SESSION['loggedin'])|| $_SESSION['loggedin'] !==true){
+    header('location:login.php');
+    exit;
+}
 
 if (isset($_POST['add_to_cart'])) {
     $product_name = $_POST['product_name'];

@@ -1,5 +1,5 @@
 <?php
-include_once('db_connection.php');
+include_once 'asset/database/db_connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,23 +11,15 @@ include_once('db_connection.php');
     <title>FieldTech</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="#"><img src="asset/img/icons/domain.png" alt="FieldTech Logo" class="logo"></a><h1 class="mainText">COMPUTER ACCESSORIES</h1>
-            <div class="navbar">
-                <ul class="nav-items">
-                    <li><a class="active" href="#Homepage">Homepage</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="login.php">Product Listings</a></li>            </div>
-        </div>
+<div class="container">
+    <?php include 'header.php';?>
         <section id="Homepage" class="Homepage" >
             <!-- Hero Section -->
             <div class="hero padd">
                 <div class="l-hero">
                     <h4>computer Acce<span>ssories</span></h4>
                     <h1>Welcome to the world of computer <br><span>technologies cheaply.</span></h1>
-                    <a href="login.html">
+                    <a href="login.php">
                         <button class="l-btn g-btn">BUY NOW</button>
                     </a>
                 </div>
@@ -67,7 +59,7 @@ include_once('db_connection.php');
                 <h2>About FieldTech</h2>
                 <div class="u-ln"></div>
                 <p>Welcome to our computer Accessories store ! This website is owned and managed by group no. 16 IT STUDENTS from National Institute of Transport(NIT) ...</p>
-                <a href="product.php" style="text-decoration: none;color:inherit"> <button class="g-btn">Explore more..</button></a>
+                <a href="about.php" style="text-decoration: none;color:inherit"> <button class="g-btn">Explore more..</button></a>
             </div>
             
         </section>
