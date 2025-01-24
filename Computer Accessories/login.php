@@ -13,7 +13,7 @@
 <body>
 <div class="wrapper">
         <h2>Login</h2>
-        <form action="control/register.php" method="post">     
+        <form action="control/login.php" method="post">     
             <div class="input-box">
                 <i class="fas fa-envelope"></i>
                 <input type="email" name="email" placeholder="Email" required>
@@ -22,7 +22,7 @@
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password" placeholder="Password" required>
             </div>
-            <input type="submit" class="btn" value="LOGIN">
+            <input type="submit" class="btn" value="LOGIN" name="submit-login">
             <div class="register">
             <p>if not have an account click <a href="register.php">Register  account</a></p></div>
         </form>

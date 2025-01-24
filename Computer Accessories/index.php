@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session
 include_once 'asset/database/db_connection.php';
 ?>
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ include_once 'asset/database/db_connection.php';
 <body>
 <div class="container">
     <?php include 'header.php';?>
-        <section id="Homepage" class="Homepage" >
+        <section id="Homepage" class="Homepage">
             <!-- Hero Section -->
             <div class="hero padd">
                 <div class="l-hero">
@@ -58,43 +59,12 @@ include_once 'asset/database/db_connection.php';
             <div class="r-ab">
                 <h2>About FieldTech</h2>
                 <div class="u-ln"></div>
-                <p>Welcome to our computer Accessories store ! This website is owned and managed by group no. 16 IT STUDENTS from National Institute of Transport(NIT) ...</p>
+                <p>Welcome to our computer Accessories store! This website is owned and managed by group no. 16 IT STUDENTS from National Institute of Transport(NIT) ...</p>
                 <a href="about.php" style="text-decoration: none;color:inherit"> <button class="g-btn">Explore more..</button></a>
             </div>
-            
         </section>
     
-        <!-- Services Section -->
-       
-
-    <section id="Shopping Cart" class="Shopping Cart"></section>
-                <div class="service sec">
-                    <h2>Our Featured Services</h2>
-                    <p>Before you can run a marathon, you need to learn how to walk.</p>
-                    <div class="s-ln"></div>
-                    <div class="sv-co">
-                        <div class="sv-box">
-                            <img src="img/icons/mobile-development.png" alt="" class="sv-icons">
-                            <h2>Web App Development</h2>
-                            <p>Before you can run a marathon, you need to learn how to walk.</p>
-                            <button class="g-btn">Explore more..</button>
-                        </div>
-                        <div class="sv-box">
-                            <img src="img/icons/web-design.png" alt="" class="sv-icons">
-                            <h2>Graphics Design</h2>
-                            <p>Before you can run a marathon, you need to learn how to walk.</p>
-                            <button class="g-btn">Explore more..</button>
-                        </div>
-                        <div class="sv-box">
-                            <img src="img/icons/tools.png" alt="" class="sv-icons">
-                            <h2>Maintanance & Repair</h2>
-                            <p>Before you can run a marathon, you need to learn how to walk.</p>
-                            <button class="g-btn">Explore more..</button>
-                        </div>
-                    </div>
-                    <button class="s-btn g-btn">Explore more &rarr;</button>
-        </div><!--End Service-->
-    </section>
+       <?php include 'footer.php';?>
         
     </div>
 </body>
