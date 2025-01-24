@@ -21,6 +21,12 @@ $execute = mysqli_query($conn, $sql1);
     //set session variable
    $_SESSION['username']=$username;
    $_SESSION['loggedin']= true;
+   if ($user['role'] === 'admin') { 
+      $_SESSION['AdminIn'] = true;
+  } else {
+      $_SESSION['AdminIn'] = false; 
+   }
+
    header('location: ../login.php');
 }
 

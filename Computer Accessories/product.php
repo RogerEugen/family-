@@ -66,7 +66,7 @@ if (isset($_POST['add_to_cart'])) {
                 ?>
                 <form action="" method="post">
                     <div class="box">
-                        <img src="image/<?php echo htmlspecialchars($fetch_product['image']); ?>" alt="">
+                        <img src="admin/img/<?php echo htmlspecialchars($fetch_product['image']); ?>" alt="">
                         <h3><?php echo htmlspecialchars($fetch_product['name']); ?></h3>
                         <div class="price">$ <?php echo htmlspecialchars($fetch_product['price']); ?>/-</div>
                         <input type="hidden" name="product_name" value="<?php echo htmlspecialchars($fetch_product['name']); ?>">

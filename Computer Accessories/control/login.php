@@ -11,6 +11,12 @@ if(isset($_POST['submit-login'])){
         if(password_verify($password, $user['password'])){
             $_SESSION['username'] = $user['username']; // Assuming 'username' is a field in your database
             $_SESSION['loggedin'] = true;
+            
+            if ($user['role'] === 'admin') {
+                $_SESSION['AdminIn'] = true;
+            } else {
+                $_SESSION['AdminIn'] = false; 
+            }
             header('Location: .../index.php');
             exit(); 
    }
