@@ -3,10 +3,10 @@ session_start(); // Start the session
 include '../../asset/database/db_connection.php';
 
 // Check if the user is logged in
-if (!isset($_SESSION['AdminIn']) || $_SESSION['AdminIn'] !== true) {
-    header('Location: login.php'); // Redirect to login page if not logged in
-    exit; // Ensure no further code is executed
-}
+// if (!isset($_SESSION['AdminIn']) || $_SESSION['AdminIn'] !== true) {
+//     header('Location: login.php'); // Redirect to login page if not logged in
+//     exit; // Ensure no further code is executed
+// }
 
 // Handle product insertion
 if (isset($_POST['submit-product'])) {
