@@ -16,7 +16,7 @@ if (isset($_POST['add_to_cart'])) {
     $product_quantity = 1;
 
     // Check if the product is already in the cart
-    $select_cart_query = "SELECT * FROM cart WHERE name = '$product_name'";
+    $select_cart_query = "SELECT * FROM cart WHERE Name_id = '$product_name'";
     $select_cart = $conn->query($select_cart_query);
 
     if ($select_cart->num_rows > 0) {
@@ -71,7 +71,7 @@ if (isset($_POST['add_to_cart'])) {
                         <div class="price">$ <?php echo htmlspecialchars($fetch_product['price']); ?>/-</div>
                         <input type="hidden" name="product_name" value="<?php echo htmlspecialchars($fetch_product['name']); ?>">
                         <input type="hidden" name="product_price" value="<?php echo htmlspecialchars($fetch_product['price']); ?>">
-                        <input type="hidden" name="product_image" value="<?php echo htmlspecialchars($fetch_product['image']); ?>">
+                        <input type="hidden"  name="product_image" value="<?php echo htmlspecialchars($fetch_product['image']); ?>">
                         <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
                     </div>
                 </form>
