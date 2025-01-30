@@ -17,7 +17,7 @@ if(isset($_POST['submit-login'])){
             } else {
                 $_SESSION['AdminIn'] = false; 
             }
-            header('Location: .../index.php');
+            header('Location: ../index.php');
             exit(); 
    }
 }
