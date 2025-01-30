@@ -36,6 +36,7 @@ if (isset($_POST['submit-product'])) {
     } else {
         $message[] = 'Error uploading image';
     }
+    header('location:../../index.php');
 }
 ?>
 
